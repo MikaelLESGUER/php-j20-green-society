@@ -1,0 +1,60 @@
+/* Style pour cacher le lien de navigation aux utilisateurs visuels */
+.visually-hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Style pour la couleur du texte verte foncée */
+body {
+    color: darkgreen;
+}
+
+/* Style pour la navigation horizontale */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Afficher les éléments de la liste horizontalement */
+}
+
+nav li {
+    flex: 1; /* Pour que chaque élément de la liste ait la même taille */
+    text-align: center; /* Centrer le texte dans chaque élément de la liste */
+    text-transform: uppercase; /* Mettre les liens en majuscules */
+    position: relative; /* Pour positionner la barre de survol */
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Pour que chaque lien occupe toute la largeur de l'élément <li> */
+    padding: 10px; /* Ajouter un espacement autour du texte du lien */
+    transition: transform 0.3s ease; /* Ajouter une transition pour l'effet de survol */
+}
+
+/* Effet de survol */
+nav a:hover {
+    transform: scale(1.2); /* Augmenter la taille du lien au survol */
+}
+
+/* Barre de survol */
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Positionner la barre en dessous du lien */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: darkgreen; /* Couleur de la barre */
+    opacity: 0; /* Masquer la barre par défaut */
+    transition: opacity 0.3s ease; /* Ajouter une transition pour l'apparition de la barre */
+}
+
+/* Afficher la barre au survol */
+nav a:hover::after {
+    opacity: 1;
+}
