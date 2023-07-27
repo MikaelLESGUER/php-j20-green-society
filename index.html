@@ -11,7 +11,19 @@
 
 <!-- En-tête du site -->
 <header>
-    <h1>GreenSociety</h1>
+    <div id="slider">
+        <!-- Les images de fond du slider -->
+        <div class="slider-item active" style="background-image: url('image/baby-panda1.webp');"></div>
+        <div class="slider-item" style="background-image: url('image/eclat-foret1.webp');"></div>
+        <div class="slider-item" style="background-image: url('image/montagne1.webp');"></div>
+        <!-- Logo -->
+        <img src="image/apple-touch-icon.png" alt="Mon logo" class="logo visible">
+
+        <!-- Titre h1 -->
+        <h1 class="slider-title visible">GreenSociety</h1>
+    </div>
+ 
+    
     <nav>
         <ul>
             <li><a href="#about">À propos</a></li>
@@ -80,12 +92,7 @@
     <p>Mentions légales | Politique de confidentialité | Contact</p>
 </footer>
 
-<script>
-    // Exemple d'utilisation de WAI-ARIA pour décrire un bouton
-    const buttonElement = document.querySelector('button');
-    buttonElement.setAttribute('role', 'button');
-    buttonElement.setAttribute('aria-label', 'Cliquez ici pour effectuer une action');
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
