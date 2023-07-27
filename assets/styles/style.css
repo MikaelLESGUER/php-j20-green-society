@@ -152,3 +152,48 @@ main {
 .slider-item.active {
     opacity: 1;
 }
+
+.accessibility-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.accessibility-menu button {
+    margin-right: 10px;
+}
+
+.daltonian-mode .slider-item {
+    filter: grayscale(100%); /* Convertit l'image en noir et blanc */
+}
+
+.daltonian-mode nav {
+    background-color: #f1f1f1;
+}
+
+.daltonian-mode nav a {
+    color: #007bff; /* Change la couleur du texte des liens */
+}
+
+.daltonian-mode h1,
+.daltonian-mode h2,
+.daltonian-mode h3,
+.daltonian-mode h4,
+.daltonian-mode h5,
+.daltonian-mode h6 {
+    color: #007bff; /* Change la couleur du texte des titres */
+}
+
+.daltonian-mode p {
+    color: #333; /* Change la couleur du texte du paragraphe */
+}
+
+/* Style pour l'augmentation de l'interligne */
+.increased-line-height p,
+.increased-line-height li {
+    line-height: 2; /* Augmente l'interligne à 2 (peut être ajusté selon vos préférences) */
+}

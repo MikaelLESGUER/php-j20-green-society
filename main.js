@@ -42,3 +42,12 @@ function startSlider() {
 
 // Démarrage du slider
 startSlider();
+
+// Gestion du bouton toggle pour le mode daltonien
+document.getElementById('toggleDaltonianModeButton').addEventListener('click', function() {
+    document.body.classList.toggle('daltonian-mode');
+});
+
+document.getElementById('increaseLineHeightButton').addEventListener('click', function() {
+    document.body.classList.toggle('increased-line-height');
+});
